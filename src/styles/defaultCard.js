@@ -2,10 +2,9 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create(
   {
-    defaultCard:
-    {
+    defaultCard: {
       flex: 1,
-      marginTop: 20,
+      marginBottom: 20,
       marginHorizontal: 15,
       paddingVertical: 10,
       paddingHorizontal: 15,
@@ -14,10 +13,11 @@ const styles = StyleSheet.create(
       shadowColor: 'black',
       shadowOffset: {
       width: 0,
-      height: 1,
+      height: 4,
       },
       shadowOpacity: 0.4,
       shadowRadius: 7,
+      opacity: 1,
     },
   }
 );

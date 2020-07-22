@@ -6,13 +6,12 @@ import DetailsButton from './DetailsButton';
 import defaultCard from '../styles/defaultCard';
 import cTypeIcon from '../styles/cTypeIcon';
 
-
-const TaskCard = ({ title }) => {
+const TaskCard = ({ title, sHour, eHour, cColor }) => {
   return (
     <View style={defaultCard}>
       <View style={styles.topContainer}>
-        <Text style={styles.dateText}>18:00h - 19:00h</Text>
-        <View style={cTypeIcon} />
+        <Text style={styles.dateText}>{sHour} - {eHour}</Text>
+        <View style={cTypeIcon(cColor).container} />
       </View>
       <View>
         <Text style={styles.titleText}>{title}</Text>

@@ -5,9 +5,9 @@ const styles = StyleSheet.create(
         title:
         {
             fontFamily: 'System',
-            fontSize: 25,
+            fontSize: 30,
             fontWeight: 'bold',
-            marginTop: 15,
+            marginVertical: 20,
             marginHorizontal: 15,
         },
     }
