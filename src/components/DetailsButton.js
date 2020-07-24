@@ -1,26 +1,26 @@
 import React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
+import { StyleSheet, View } from 'react-native';
+import { Icon } from 'react-native-elements';
 
 const DetailsButton = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Event details</Text>
+      <Icon
+        color="dodgerblue"
+        name="chevron-down-outline"
+        type="ionicon"
+      />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    justifyContent: 'space-around',
     marginTop: 2,
-    padding: 8,
-    backgroundColor: 'ghostwhite',
+    padding: 2,
+    backgroundColor: 'white',
     borderRadius: 5,
-  },
-  title: {
-    textAlign: 'center',
-    fontSize: 14,
-    fontWeight: 'normal',
-    color: 'dodgerblue',
   },
 });
 

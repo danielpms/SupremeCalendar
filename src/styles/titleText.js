@@ -7,7 +7,8 @@ const styles = StyleSheet.create(
             fontFamily: 'System',
             fontSize: 30,
             fontWeight: 'bold',
-            marginVertical: 20,
+            marginTop: 20,
+            marginBottom: 5,
             marginHorizontal: 15,
         },
     }
