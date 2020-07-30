@@ -1,10 +1,12 @@
 import React from 'react';
 import TimelineLayout from '../layouts/TimelineLayout';
+import tasksData from '../data/test/tasksData';
 
 const TimelineScreen = () => {
+  const oData = tasksData();
 
   return (
-    <TimelineLayout />
+    <TimelineLayout oData={oData}/>
   );
 };
 
