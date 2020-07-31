@@ -3,12 +3,15 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { DrawerContentScrollView, DrawerItem } from '@react-navigation/drawer';
 import { Icon } from 'react-native-elements';
+import CalendarCard from './CalendarCard';
 
 const CustomDrawerContent = () => {
   return (
     <DrawerContentScrollView>
-      <View>
-        <Text style={{ fontSize: 20, fontWeight: 'bold', marginTop: 65, marginBottom: 5, marginLeft: 15 }}>Calendars</Text>
+      <View style={styles.container}>
+        <Text style={{ fontSize: 20, fontWeight: 'bold' }}>Calendars</Text>
+        <CalendarCard title="Meeting" color="pink" />
+        <CalendarCard title="Festivity" color="skyblue" />
       </View>
       <DrawerItem
         label="Help"
@@ -21,6 +24,10 @@ const CustomDrawerContent = () => {
 };
 
 const styles = StyleSheet.create({
+  container: {
+    marginVertical: 10,
+    marginHorizontal: 20,
+  },
 });
 
 export default CustomDrawerContent;
